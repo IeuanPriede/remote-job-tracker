@@ -1,0 +1,3 @@
+* text=auto
+*.{js,jsx,ts,tsx,css,html,json,md,yml,yaml,py} text eol=lf
+*.bat text eol=crlf
