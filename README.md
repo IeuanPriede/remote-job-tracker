@@ -234,6 +234,40 @@ export default function App() {
 
 ---
 
+## 🔮 Future Enhancements
+
+These features are out of scope for the MVP but are planned for later iterations:
+
+### Job Management
+- Attach **CVs, cover letters, or interview prep documents** to each application.
+- Add **tags/categories** (e.g. "Tech", "Finance", "Start-up") for easier grouping.
+- Import job postings directly from **LinkedIn / Indeed / API integrations**.
+
+### Collaboration & Communication
+- Add recruiter or hiring manager **contact details** to job entries.
+- Enable **email integration** (auto-pulling emails into notes, reminders for follow-ups).
+- Support **in-app notifications** (e.g., upcoming interview dates, deadlines).
+
+### Calendar & Scheduling
+- Calendar view with **upcoming interviews / follow-ups**.
+- Sync with **Google Calendar / Outlook** for reminders.
+
+### Analytics & Insights
+- Track **time in pipeline stages** (e.g., average days from application to interview).
+- Add charts for **conversion rates** (applied → interview → offer).
+- Compare **applications across industries or roles**.
+
+### User Accounts & Profiles
+- Multi-user support (different job seekers, shared accounts).
+- OAuth login with **Google/GitHub/LinkedIn**.
+- User settings for **custom statuses** or **preferred salary currency**.
+
+### Mobile & Offline
+- **Mobile-friendly PWA** for on-the-go job tracking.
+- Offline mode with **local storage sync**.
+
+---
+
 ## 🧪 Health Endpoint (for reference)
 
 **GET** `/api/health/` → `{"status": "ok"}`
