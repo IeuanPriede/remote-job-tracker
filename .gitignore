@@ -205,3 +205,24 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Remote Job Tracker specific ignores ---
+
+# Node.js / frontend deps
+frontend/node_modules/
+frontend/.vite/
+frontend/dist/
+
+# Local env files (frontend & backend)
+*.local
+*.env.*
+
+# SQLite dev DB (already covered but just to be safe at root)
+db.sqlite3
+
+# VS Code settings if you don’t want them in repo
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
