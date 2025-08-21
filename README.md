@@ -191,6 +191,83 @@ export default function App() {
 
 ---
 
+## 📖 User Stories (MVP)
+
+### Core CRUD
+- **As a job seeker, I can create a job entry with a title, company, source, link, status, salary range, location, applied date, next action date, and notes so that I can track opportunities in one place.**  
+  - Given I am on the "Add Job" form  
+  - When I fill in all required fields and click "Save"  
+  - Then a new job entry is created and shown in my job list with the provided details.  
+
+- **As a job seeker, I can edit any job entry so that my records stay accurate and up to date.**  
+  - Given I am viewing a job in my list  
+  - When I click "Edit," update a field, and save  
+  - Then the job entry is updated and displays the new information.  
+
+- **As a job seeker, I can delete a job entry so that I can remove irrelevant or outdated opportunities.**  
+  - Given I am viewing a job in my list  
+  - When I click "Delete" and confirm  
+  - Then the job entry is removed from my list.  
+
+### Status Tracking
+- **As a job seeker, I can update the status of a job (Wishlist → Applied → Interview → Offer → Rejected) so that I can see where I stand in the hiring pipeline.**  
+  - Given a job exists in my list  
+  - When I select a new status from the dropdown  
+  - Then the job’s status is updated and visible in the list.  
+
+### Filtering & Searching
+- **As a job seeker, I can filter my jobs by status so that I can focus on opportunities at a specific stage.**  
+  - Given I have multiple jobs with different statuses  
+  - When I select a filter option (e.g., "Interview")  
+  - Then only jobs with that status are shown in the list.  
+
+- **As a job seeker, I can search jobs by company name or job title so that I can quickly find specific entries.**  
+  - Given I have jobs saved with different titles and companies  
+  - When I type a keyword into the search bar  
+  - Then only jobs that match the keyword appear in the list.  
+
+### Notes
+- **As a job seeker, I can add timestamped notes to a job entry so that I can log progress, reminders, or interactions with recruiters.**  
+  - Given I am viewing a job entry  
+  - When I add a note and click "Save"  
+  - Then the note is saved with the current date/time and displayed in a log under that job.  
+
+---
+
+## 🔮 Future Enhancements
+
+These features are out of scope for the MVP but are planned for later iterations:
+
+### Job Management
+- Attach **CVs, cover letters, or interview prep documents** to each application.
+- Add **tags/categories** (e.g. "Tech", "Finance", "Start-up") for easier grouping.
+- Import job postings directly from **LinkedIn / Indeed / API integrations**.
+
+### Collaboration & Communication
+- Add recruiter or hiring manager **contact details** to job entries.
+- Enable **email integration** (auto-pulling emails into notes, reminders for follow-ups).
+- Support **in-app notifications** (e.g., upcoming interview dates, deadlines).
+
+### Calendar & Scheduling
+- Calendar view with **upcoming interviews / follow-ups**.
+- Sync with **Google Calendar / Outlook** for reminders.
+
+### Analytics & Insights
+- Track **time in pipeline stages** (e.g., average days from application to interview).
+- Add charts for **conversion rates** (applied → interview → offer).
+- Compare **applications across industries or roles**.
+
+### User Accounts & Profiles
+- Multi-user support (different job seekers, shared accounts).
+- OAuth login with **Google/GitHub/LinkedIn**.
+- User settings for **custom statuses** or **preferred salary currency**.
+
+### Mobile & Offline
+- **Mobile-friendly PWA** for on-the-go job tracking.
+- Offline mode with **local storage sync**.
+
+---
+
 ## 🧪 Health Endpoint (for reference)
 
 **GET** `/api/health/` → `{"status": "ok"}`
