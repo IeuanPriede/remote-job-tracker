@@ -7,7 +7,7 @@ A full‑stack web app to log job applications, track pipeline status, and visua
 ## ✨ Current Status (MVP in progress)
 
 * **Monorepo** with `backend/` (Django + DRF) and `frontend/` (React + Vite + Tailwind v4)
-* **Backend**: Django project scaffolded with a health endpoint at `GET /api/health/`
+* **Backend**: Django + DRF project with health endpoint and first domain models (Job, Note, Tag) wired for migrations.
 * **Frontend**: Vite + React app bootstrapped; Tailwind v4 wired via `@tailwindcss/postcss`
 * Local dev instructions below reproduce a working setup from a fresh clone
 
@@ -182,12 +182,11 @@ export default function App() {
 
 ## 🛣️ Roadmap (next)
 
-* Models: `Company`, `JobPosting`, `Application`
+* ✅ Models: `Job`, `Note`, `Tag`
 * DRF serializers + viewsets and routes under `/api/*`
-* React Router pages: Dashboard, Applications, Companies
+* React Router pages: Dashboard, Applications
 * Analytics endpoint + charts (applications/week, status breakdown)
 * Auth (JWT), protected routes, user profiles
-* Deployment (Render/Fly.io for API, Vercel/Netlify for frontend)
 
 ---
 
